@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Lab - Level 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="jQuery/jquery-ui-1.13.0.custom/jquery-ui.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+
+<body onload="level_1_app()">
+
+    <div class="box_main">
+        <div class="avatar_frame" id="avatar_frame"><img src="images/welcome_screen/astronaut_av.png" alt=""></div>
+        <div class="avatar_pic" id="avatarPic"></div>
+        <div class="bacground_img"><img src="images/title_screen/space_back.png" alt=""></div>
+    </div>
+
+    <div class="box_score">
+        <img class="score_frame" src="images/welcome_screen/frame_2_b.png" alt="">
+    </div>
+
+    <div class="score_data">
+        <p>Player: <br><span class="name" style="font-size: 30px;"></span></p><br>
+        <p>Score: <br><span class="score" style="font-size: 30px;"></span></p><br>
+        <p>Time: <br><span class="time" style="font-size: 30px;">--</span>sec</p>
+    </div>
+
+    <div class="w3-light-grey">
+        <div id="myBar" class="w3-container w3-green" style="height:24px;width:1%"></div>
+    </div>
+
+    <div class="level1_main_box">
+        <div class="puzzle_box">
+            <div class="puzzle_row_1">
+                <img src="images/level1/puzzle/Laboratory_01.jpg" data-value="1" class="level1_puzle_q" alt="">
+                <img src="images/level1/puzzle/Laboratory_02.jpg" data-value="2" class="level1_puzle_q" alt="">
+                <img src="images/level1/puzzle/Laboratory_03.jpg" data-value="3" class="level1_puzle_q" alt="">
+            </div>
+            <div class="puzzle_row_2">
+                <img src="images/level1/puzzle/Laboratory_04.jpg" data-value="4" class="level1_puzle_q" alt="">
+                <img src="images/level1/puzzle/Laboratory_05.jpg" data-value="5" class="level1_puzle_q" alt="">
+                <img src="images/level1/puzzle/Laboratory_06.jpg" data-value="6" class="level1_puzle_q" alt="">
+            </div>
+            <div class="puzzle_row_3">
+                <img src="images/level1/puzzle/Laboratory_07.jpg" data-value="7" class="level1_puzle_q" alt="">
+                <img src="images/level1/puzzle/Laboratory_08.jpg" data-value="8" class="level1_puzle_q" alt="">
+                <img src="images/level1/puzzle/Laboratory_09.jpg" data-value="9" class="level1_puzle_q" alt="">
+            </div>
+        </div>
+
+        <div class="level_1_puzzle_drag">
+            <div>
+                <img src="images/level1/puzzle/Laboratory_06.jpg" data-value="6" class="level_1_puzzles" alt="">
+                <img src="images/level1/puzzle/Laboratory_05.jpg" data-value="5" class="level_1_puzzles" alt="">
+                <img src="images/level1/puzzle/Laboratory_09.jpg" data-value="9" class="level_1_puzzles" alt="">
+            </div>
+            <div>
+                <img src="images/level1/puzzle/Laboratory_07.jpg" data-value="7" class="level_1_puzzles" alt="">
+                <img src="images/level1/puzzle/Laboratory_02.jpg" data-value="2" class="level_1_puzzles" alt="">
+                <img src="images/level1/puzzle/Laboratory_01.jpg" data-value="1" class="level_1_puzzles" alt="">
+
+            </div>
+            <div>
+                <img src="images/level1/puzzle/Laboratory_04.jpg" data-value="4" class="level_1_puzzles" alt="">
+                <img src="images/level1/puzzle/Laboratory_03.jpg" data-value="3" class="level_1_puzzles" alt="">
+                <img src="images/level1/puzzle/Laboratory_08.jpg" data-value="8" class="level_1_puzzles" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="time_up_message">
+        <h1>Time's up!</h1>
+    </div>
+
+    <div class="well_done_message">
+        <h1>Well done!</h1>
+    </div>
+
+    <div class="level_1_btn">
+        <button id="level_1_runLevel2">Next level</button>
+    </div>
+
+    <audio src="audio/game_music_2.mp3"></audio>
+    <audio src="audio/buzzer.wav"></audio>
+    <audio src="audio/puzle_complete.wav"></audio>
+    <audio src="audio/time_up.wav"></audio>
+    <audio src="audio/accept_2.mp3"></audio>
+    <audio src="audio/hurry.mp3"></audio>
+    <audio src="audio/timer.mp3"></audio>
+
+
+    <script src="jQuery/jquery-3.6.0.js"></script>
+    <script src="jQuery/jquery-ui-1.13.0.custom/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/level_1_script.js"></script>
+</body>
+
+</html>

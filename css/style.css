@@ -1,0 +1,555 @@
+/* font-family: 'Pacifico', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: radial-gradient(rgb(178, 150, 206), rgb(127, 149, 194));
+    height: 100vh;
+}
+
+/* ------------------ TITLE PAGE ------------------ */
+
+.box_main {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 150px;
+    background: -webkit-radial-gradient(rgb(235, 87, 191), rgb(63, 144, 211));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(173, 139, 25), 0 0 25px blue, 0 0 5px darkblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title p {
+    margin-top: 50px;
+}
+
+.title img {
+    width: 220px;
+    z-index: 100;
+}
+
+.title_img {
+    position: absolute;
+    bottom: 0;
+    z-index: -20;
+    left: 50px;
+}
+
+.title_img_2 {
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: -50;
+}
+
+.bacground_img {
+    position: absolute;
+    z-index: -100;
+    top: 0px;
+}
+
+.bacground_img img {
+    width: 100%;
+}
+
+.start_button {
+    cursor: pointer;
+    z-index: 200;
+}
+
+/* ------------------ AVATAR & NAME PAGE ------------------ */
+
+.box_name,
+.box_avatar_random,
+.box_start {
+    background-color: rgba(39, 79, 124, 0.719);
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 15vh;
+    left: 15%;
+    border-radius: 25px;
+    padding: 1em;
+}
+
+.box_name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box_start {
+    display: none;
+    justify-content: center;
+    height: 200px;
+}
+
+.box_name input {
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.box_name {
+    height: 300px;
+}
+
+.box_avatar_random {
+    display: none;
+}
+
+.box_avatar_random {
+    font-size: 22px;
+    text-align: center;
+    height: auto;
+    color: rgb(240, 235, 235);
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+#avatar {
+    height: 350px;
+}
+
+.box_btn {
+    display: flex;
+    justify-content: center;
+}
+
+#btnGen,
+#btnSet,
+#btnGetName,
+#btnStart,
+#level_btn_tutorial_start,
+#level_1_tutorial_reply,
+#level_1_runLevel2,
+#level_1_runLevel3,
+#level_1_runGameOver,
+#backToStart,
+#level_btn_tutorial_start_lv2,
+#level_btn_tutorial_start_lv3 {
+    border-radius: 5px;
+    border: outset 3px rgb(241, 231, 231);
+    margin: 1em;
+    padding: 0.6em;
+    width: 200px;
+    cursor: pointer;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 22px;
+    background-color: rgba(240, 235, 235, 0.185);
+    color: rgb(240, 235, 235);
+}
+
+#btnStart {
+    height: 3em;
+    align-items: center;
+    align-self: center;
+}
+
+.avatar_frame {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar_frame img {
+    width: 350px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    transform: rotate(-30deg);
+}
+
+.avatar_pic {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 150px;
+    top: 45px;
+    width: 80px;
+}
+
+.avatar_giv {
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    display: none;
+}
+
+.score_frame {
+    position: absolute;
+    right: 50px;
+    top: 455px;
+    background-color: rgb(39, 79, 124);
+    border-radius: 25px;
+    width: 420px;
+}
+
+.score_data {
+    position: absolute;
+    top: 520px;
+    right: 205px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 20px;
+    color: rgb(240, 235, 235);
+    justify-content: center;
+}
+
+.warning_name_entry {
+    color: red;
+    display: none;
+    font-size: 15px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    justify-content: center;
+}
+
+/* ------------------ TUTORIAL LEVEL PAGES ------------------ */
+
+.level1_tutorial_box {
+    display: flex;
+    justify-content: center;
+}
+
+.level_1_tutorial_how,
+.level_2_tutorial_how {
+    display: flex;
+    justify-content: center;
+}
+
+.level_1_tutorial_how h1,
+.level_2_tutorial_how h1,
+.level_1_tutorial_how h2 {
+    position: absolute;
+    top: 0px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: rgb(240, 235, 235);
+}
+
+.level_1_tutorial_how h2 {
+    top: 50px;
+}
+
+.legend {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    width: 20%;
+    background-color: rgba(36, 83, 124, 0.822);
+    padding: 1em;
+    border-radius: 25px;
+}
+
+.legend p {
+    font-size: 17px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: rgb(240, 235, 235);
+}
+
+.level_2_tutorial_how h2 {
+    position: absolute;
+    top: 80px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: rgb(240, 235, 235);
+}
+
+.video_position_level_2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+/* ------------------ LEVEL 1 PAGE ------------------ */
+
+.video_position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    z-index: 1000;
+}
+
+.puzzle_box {
+    position: absolute;
+    top: 20%;
+    left: 50px;
+}
+
+.puzzle_row_1 img,
+.puzzle_row_2 img,
+.puzzle_row_3 img {
+    padding-bottom: 0.3em;
+    opacity: 0.2;
+}
+
+.level_1_puzzle_drag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.level_1_puzzle_drag img {
+    width: 100px;
+    padding-bottom: 0.3em;
+}
+
+.level_1_btn,
+.level_2_btn,
+.level_3_btn {
+    display: none;
+    justify-content: center;
+    margin-top: -200px;
+}
+
+.level_2_btn {
+    margin-top: -500px;
+}
+
+.level_3_btn {
+    margin-top: -500px;
+}
+
+.time_up_message,
+.time_up_message_level_2,
+.time_up_message_level_3,
+.well_done_message,
+.well_done_message_level_2,
+.well_done_message_level_3 {
+    display: flex;
+}
+
+.time_up_message h1,
+.time_up_message_level_2 h1,
+.time_up_message_level_3 h1,
+.well_done_message h1,
+.well_done_message_level_2 h1,
+.well_done_message_level_3 h1 {
+    margin: auto;
+    margin-top: -300px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: rgb(240, 235, 235);
+    visibility: hidden;
+}
+
+/* ------------------ LEVEL 2 & 3 PAGE ------------------ */
+
+.level2_main_box,
+.level3_main_box {
+    display: flex;
+}
+
+.question_images {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.question_images img {
+    width: 60%;
+    padding: 0.5em;
+}
+
+.tools_images,
+.people_image {
+    margin-top: 200px;
+}
+
+.tools_images img,
+.people_image img {
+    width: 200px;
+    margin-left: auto;
+}
+
+.time_up_message_level_2 h1,
+.time_up_message_level_3 h1 {
+    margin-top: -600px;
+}
+
+.well_done_message_level_2 h1,
+.well_done_message_level_3 h1 {
+    margin-top: -600px;
+}
+
+/* ------------------ GAME OVER PAGE ------------------ */
+
+.heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading h1,
+h2,
+.leadbord_container h2 {
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: rgb(240, 235, 235);
+}
+
+.leadbord_container h2 {
+    padding-top: 1em;
+}
+
+.leadbord_container {
+    background-color: rgba(39, 79, 124, 0.719);
+    border-radius: 25px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: rgb(240, 235, 235);
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leaderboard_box {
+    display: flex;
+    justify-content: center;
+}
+
+.leaderboard_box div {
+    margin: auto;
+    padding: 1em;
+}
+
+.game_over_leaderboard_heading {
+    position: absolute;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: rgb(240, 235, 235);
+}
+
+#playersPlace {
+    margin-top: 25px;
+}
+
+.gameover_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.game_over_gif {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -100;
+}
+
+/* ------------------ LOADING BAR ------------------ */
+
+
+.w3-light-grey {
+    visibility: hidden;
+}
+
+/* ------------------ MEDIA QUERY ------------------ */
+
+/* ------------------ TITLE PAGE ------------------ */
+
+@media screen and (max-width: 1500px) {
+
+    .title {
+        font-size: 100px;
+    }
+
+    .title_img {
+        width: 50%;
+    }
+
+    .title_img_2 {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .title {
+        font-size: 70px;
+    }
+
+    .title img {
+        width: 100px;
+    }
+
+    .title_img {
+        width: 50%;
+    }
+
+    .title_img_2 {
+        width: 40%;
+    }
+}
+
+/* ------------------ AVATAR PAGE ------------------ */
+
+@media screen and (max-width: 1670px) {
+
+    .score_frame {
+        top: 340px;
+    }
+
+    .score_data {
+        top: 410px;
+    }
+}
+
+/* ------------------ LEVEL 1 PAGE ------------------ */
+
+@media screen and (max-width: 1670px) {
+
+    .puzzle_row_1 img,
+    .puzzle_row_2 img,
+    .puzzle_row_3 img {
+        width: 130px;
+    }
+
+    .level_1_random_piece {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .level_1_random_piece img {
+        width: 100px;
+        padding-bottom: 0.3em;
+    }
+}
+
+/* ------------------ LEVEL 2 PAGE ------------------ */
+
+@media screen and (max-width: 1670px) {
+
+    .question_images img {
+        width: 50%;
+    }
+
+    .tools_images img,
+    .people_image img {
+        width: 160px;
+    }
+}
+
+/* ------------------ AVATAR ANIMATION ------------------ */
+
+.avatar {
+    animation: anime 0.7s;
+}
+
+@keyframes anime {
+
+    100% {
+        transform: translateX(1200px) translateY(-340px) scale(0.2);
+    }
+}
