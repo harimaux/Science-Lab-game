@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Lab - Welcome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="jQuery/jquery-ui-1.13.0.custom/jquery-ui.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="box_main">
+        <div class="avatar_frame" id="avatar_frame"><img src="images/welcome_screen/astronaut_av.png" alt=""></div>
+        <div class="avatar_pic" id="avatarPic"></div>
+        <div class="bacground_img"><img src="images/title_screen/space_back.png" alt=""></div>
+    </div>
+
+    <div class="avatar_giv">
+        <img src="images/welcome_screen/avatar_animation_2.gif" alt="">
+    </div>
+
+    <div class="box_score">
+        <img class="score_frame" src="images/welcome_screen/frame_2_b.png" alt="">
+    </div>
+
+    <div class="score_data">
+        <p>Player: <br><span class="name" style="font-size: 30px;"></span></p><br>
+        <p>Score: <br><span class="score" style="font-size: 30px;"></span></p><br>
+        <p>Time: <br><span class="time" style="font-size: 30px;"></span></p>
+    </div>
+
+    <div class="box_name">
+        <p class="warning_name_entry">Error, please enter a name.</p>
+        <input type="text" id="userName" placeholder="Please enter your name..">
+        <button id="btnGetName">Go!</button>
+    </div>
+
+
+    <div class="box_avatar_random">
+        <p class="warning_name_entry">Error, please generate your avatar.</p>
+        <p>Welcome <span class="name"></span></p>
+        <p>Choose your avatar!</p>
+        <div id="avatar"></div>
+        <div class="box_btn">
+            <button id="btnGen">Generate Avatar</button>
+            <button id="btnSet">Set Avatar</button>
+        </div>
+    </div>
+
+    <div class="box_start">
+        <button id="btnStart">Start!</button>
+    </div>
+
+    <div class="loading_bar">
+        <div class="w3-light-grey">
+            <div id="myBar" class="w3-container w3-green" style="height:24px;width:1%"></div>
+        </div>
+    </div>
+
+    <audio src="audio/go_sound.wav"></audio>
+    <audio src="audio/shore_buzz.wav"></audio>
+
+
+    <script src="jQuery/jquery-3.6.0.js"></script>
+    <script src="jQuery/jquery-ui-1.13.0.custom/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
